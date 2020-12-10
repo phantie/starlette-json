@@ -4,7 +4,7 @@ from setuptools import setup
 
 NAME = 'starlette_json'
 VERSION = '20.09.18'
-DESCRIPTION = 'Custom json serializers for the Starlette web framework.'
+DESCRIPTION = 'orjson serializer for the Starlette web framework.'
 URL = 'https://github.com/chrisliveseer/starlette-json'
 EMAIL = 'chris@liveseer.com'
 AUTHOR = 'Chris Liveseer'
@@ -44,8 +44,6 @@ setup(
 	install_requires=['starlette'],
 	extra_require=[
 		'orjson',
-		'ujson',
-		'python-rapidjson'
 	],
 	include_package_data=True,
 )
